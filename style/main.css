@@ -1,0 +1,50 @@
+@font-face {
+    font-family: helvy-med;
+    src: url("./HelveticaNeue-Medium.otf") format("opentype");
+}
+
+* {
+    overflow: hidden;
+    margin: 0;
+}
+
+body {
+    background-color: #f2c463;
+}
+
+#game {
+    z-index: 2;
+}
+
+#game canvas {
+    z-index: 2;
+    position: absolute;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .9;
+}
+
+#trianglify {
+    z-index: 1;
+}
+
+.instructions {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index: 2;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
